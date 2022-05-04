@@ -1,0 +1,68 @@
+{
+  "races": [
+    {
+      "date": "2022-05-03T19:00:00.816Z",
+      "place": "tallinn",
+      "horses": [
+        {
+          "pickedName": "will",
+          "pickedColor": "Red"
+        }
+      ],
+      "winner": {
+        "pickedName": "will",
+        "pickedColor": "Red"
+      },
+      "id": 1
+    },
+    {
+      "date": "2022-05-03T19:00:00.816Z",
+      "place": "tallinn",
+      "horses": [
+        {
+          "pickedName": "will",
+          "pickedColor": "Red"
+        }
+      ],
+      "winner": {
+        "pickedName": "will",
+        "pickedColor": "Red"
+      },
+      "id": 2
+    },
+    {
+      "date": "2022-05-04T17:57:52.629Z",
+      "place": "tallinn",
+      "horses": [
+        {
+          "pickedName": "nord",
+          "pickedColor": "White"
+        },
+        {
+          "pickedName": "juliet",
+          "pickedColor": "Purple"
+        }
+      ],
+      "winner": {
+        "pickedName": "juliet",
+        "pickedColor": "Purple"
+      },
+      "id": 3
+    },
+    {
+      "date": "2022-06-04T19:00:00.000Z",
+      "place": "tallinn",
+      "horses": [
+        {
+          "pickedName": "george",
+          "pickedColor": "Brown"
+        }
+      ],
+      "winner": {
+        "pickedName": "george",
+        "pickedColor": "Brown"
+      },
+      "id": 4
+    }
+  ]
+}
