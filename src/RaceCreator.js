@@ -40,9 +40,15 @@ export default function RaceCreator() {
             if (random.pickedName === horse.pickedName && random.pickedColor === horse.pickedColor) {
                 setNotification('Your horse won the race!')
             } else {
-                setNotification('Your horse did not win the race...')
+                setNotification('Your horse lost...')
             }
         }
+    }
+
+    function handleGoBack() {
+        setHorses([])
+        setPickHorses(false)
+        setNotification('')
     }
 
     return (
@@ -58,7 +64,8 @@ export default function RaceCreator() {
                 <HorsePicker
                     horses = {horses}
                     handleAdding = {handleAdding}
-                    notification = {notification}/>
+                    notification = {notification}
+                    onClick = {() => handleGoBack()}/>
                 <ListHorses
                     horses = {horses}
                     betHorse = {betHorse}/>

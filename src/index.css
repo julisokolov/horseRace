@@ -6,15 +6,15 @@ body {
 table {
     float: left;
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 2%;
+    padding-right: 3%;
 }
 
 #listhorses {
     border-collapse: collapse;
     width: 30%;
     padding-top: 5%;
-    margin-right: 5%;
+    margin-right: 3%;
 }
 
 #listhorses td, #listhorses th {
@@ -66,6 +66,8 @@ button:hover {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .inputheader {

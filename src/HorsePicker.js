@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function HorsePicker({handleAdding, notification}) {
+export default function HorsePicker({handleAdding, notification, onClick}) {
     const [name, setName] = useState('')
     const [horseColor, setHorseColor] = useState('Red')
 
@@ -30,6 +30,7 @@ export default function HorsePicker({handleAdding, notification}) {
                 <tr>
                     <td><button type = "submit" onClick={() => handleAdding(name, horseColor)}>Add</button></td>
                 </tr>
+                <tr><td><button type = "submit" onClick={onClick}>Back</button></td></tr>
                 <tr><td>{notification !== '' ? <div className="notification">{notification}</div> : <div></div>}</td></tr>
             </tbody>
         </table>
