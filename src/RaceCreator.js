@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import DateLocation from './DateLocation'
 import HorsePicker from "./HorsePicker"
 import ListHorses from "./ListHorses";
@@ -14,6 +14,14 @@ export default function RaceCreator() {
     const [horses, setHorses] = useState([])
 
     const [notification, setNotification] = useState('')
+
+    const [races, setRaces] = useState([])
+
+    useEffect(() => {
+        raceService
+            .getAll()
+            .then(history => setRaces(history))
+    }, [])
 
     function handleAdding(name, color) {
         setHorses(horses.concat({ pickedName: name, pickedColor: color }))
@@ -37,6 +45,7 @@ export default function RaceCreator() {
                 winner: random
             }
             raceService.create(race)
+            setRaces(races.concat(race))
             if (random.pickedName === horse.pickedName && random.pickedColor === horse.pickedColor) {
                 setNotification('Your horse won the race!')
             } else {
@@ -69,7 +78,7 @@ export default function RaceCreator() {
                 <ListHorses
                     horses = {horses}
                     betHorse = {betHorse}/>
-                <RaceHistory />
+                <RaceHistory races = {races}/>
             </div>
             }
         </div>

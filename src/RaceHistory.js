@@ -1,13 +1,4 @@
-import { useEffect, useState } from "react"
-import raceService from "./service"
-
-export default function RaceHistory() {
-    const [races, setRaces] = useState([])
-    useEffect(() => {
-        raceService
-            .getAll()
-            .then(history => setRaces(history))
-    }, [])
+export default function RaceHistory({races}) {
     return (
         <table id ="listhorses">
             <thead>
