@@ -37,6 +37,29 @@
         "pickedColor": "Green"
       },
       "id": 2
+    },
+    {
+      "date": "2022-05-26T10:00:00.000Z",
+      "place": "tartu",
+      "horses": [
+        {
+          "pickedName": "waldis",
+          "pickedColor": "Yellow"
+        },
+        {
+          "pickedName": "oskar",
+          "pickedColor": "Black"
+        },
+        {
+          "pickedName": "henry",
+          "pickedColor": "White"
+        }
+      ],
+      "winner": {
+        "pickedName": "oskar",
+        "pickedColor": "Black"
+      },
+      "id": 3
     }
   ]
 }
